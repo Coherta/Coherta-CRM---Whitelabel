@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^resize\.php$ - [L]
+RewriteRule ^_imgcache/ - [L]
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{QUERY_STRING} (^|&)w=[0-9]+(&|$) [OR]
+RewriteCond %{QUERY_STRING} (^|&)h=[0-9]+(&|$)
+RewriteRule ^(.+\.(?:jpe?g|png|gif|webp))$ resize.php?src=$1 [L,QSA]

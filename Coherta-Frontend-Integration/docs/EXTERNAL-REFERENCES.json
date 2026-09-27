@@ -1,0 +1,126 @@
+{
+  "method": "Static quoted include/require and root asset references; relative includes assumed relative to their source file. Dynamic paths and runtime working-directory changes require manual review.",
+  "includes_outside_app": [
+    {
+      "source": "app/base.php",
+      "line": 3,
+      "literal_path": "/../pricing.php",
+      "resolved_assuming_source_directory": "pricing.php",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/free_trial.php",
+      "line": 2,
+      "literal_path": "/../pricing.php",
+      "resolved_assuming_source_directory": "pricing.php",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/free_trial.php",
+      "line": 70,
+      "literal_path": "/../includes/low-word-count-content.php",
+      "resolved_assuming_source_directory": "includes/low-word-count-content.php",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/sign-up.php",
+      "line": 2,
+      "literal_path": "/../pricing.php",
+      "resolved_assuming_source_directory": "pricing.php",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/stakeholder-monitoring.php",
+      "line": 3,
+      "literal_path": "/../includes/stakeholder_monitoring_credits.php",
+      "resolved_assuming_source_directory": "includes/stakeholder_monitoring_credits.php",
+      "present_in_archive": false
+    }
+  ],
+  "root_asset_references": [
+    {
+      "source": "app/codex.php",
+      "line": 327,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/forgot-password.php",
+      "line": 19,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/forgot-password.php",
+      "line": 20,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/login-revision.php",
+      "line": 19,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/login-revision.php",
+      "line": 20,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/login.php",
+      "line": 290,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/login.php",
+      "line": 291,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/offer.php",
+      "line": 394,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/partial/sidebar.php",
+      "line": 47,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/partial/topbar.php",
+      "line": 9,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/sign-up.php",
+      "line": 15,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/sign-up.php",
+      "line": 16,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/sign-up.php",
+      "line": 70,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    },
+    {
+      "source": "app/sign-up.php",
+      "line": 71,
+      "asset_path": "/assets/img/logo/logo.png",
+      "present_in_archive": false
+    }
+  ]
+}

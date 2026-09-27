@@ -1,0 +1,36 @@
+.wf-screening-result-dialog {
+    box-sizing: border-box;
+    width: min(620px, calc(100vw - 40px));
+    max-height: calc(100vh - 40px);
+    margin: auto;
+    padding: 24px;
+    border: 1px solid #d7deea;
+    border-radius: 24px;
+    background: #fff;
+    color: #142033;
+    font-family: Inter, Arial, sans-serif;
+    box-shadow: 0 28px 70px rgba(15,23,42,.26);
+    overflow: auto;
+}
+.wf-screening-result-dialog::backdrop { background: rgba(14,18,26,.42); }
+.wf-screening-result-dialog button {
+    font: inherit;
+    border: 1px solid #d7deea;
+    background: #fff;
+    color: #142033;
+    border-radius: 12px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.wf-screening-result-dialog button:focus-visible { outline: 3px solid #1f6fff; outline-offset: 2px; }
+.wf-screening-result-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.wf-screening-result-head h2 { margin: 0 0 6px; font-size: 22px; font-weight: 700; line-height: 1.2; }
+.wf-screening-result-head p { margin: 0; color: #5c6b82; font-size: 14px; }
+.wf-screening-result-summary { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+.wf-screening-result-score { font-size: 28px; font-weight: 800; }
+.wf-screening-result-decision { display: inline-flex; padding: 6px 10px; border-radius: 999px; background: #eef4ff; color: #214bb8; font-size: 13px; font-weight: 800; }
+.wf-screening-result-decision[data-decision="accepted"] { background: #ecfdf3; color: #027a48; }
+.wf-screening-result-decision[data-decision="declined"] { background: #fff1f0; color: #b42318; }
+.wf-screening-result-threshold { color: #5c6b82; font-size: 13px; margin: 0 0 20px; }
+.wf-screening-result-dialog h3 { font-size: 14px; font-weight: 700; margin: 0 0 8px; }
+.wf-screening-result-reason { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.6; font-size: 14px; }

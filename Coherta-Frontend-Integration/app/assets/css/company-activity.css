@@ -1,0 +1,36 @@
+.company-activity { padding-top: 24px; padding-bottom: 32px; }
+.company-activity [hidden] { display: none !important; }
+.company-activity .ca-back { display: inline-block; margin-bottom: 18px; }
+.company-activity .ca-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.company-activity h1 { font-size: 24px; margin-bottom: 8px; }
+.company-activity .ca-heading p { margin-bottom: 12px; color: #596579; }
+.company-activity .ca-account { display: inline-block; padding: 5px 11px; border-radius: 6px; background: #eef2ff; color: #414b85; font-size: 13px; }
+.company-activity .ca-filters { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px; margin-bottom: 18px; }
+.company-activity .ca-filters > div { flex: 1 1 160px; }
+.company-activity .ca-filters > div:first-child { flex-basis: 240px; }
+.company-activity label { display: block; margin-bottom: 6px; font-weight: 600; }
+.company-activity .ca-coverage { color: #596579; font-size: 13px; line-height: 1.6; margin-bottom: 22px; }
+.company-activity .ca-state { padding: 42px 20px; text-align: center; color: #596579; border: 1px dashed #dce1eb; border-radius: 8px; }
+.company-activity .ca-table-wrap { overflow-x: auto; }
+.company-activity .ca-table { min-width: 760px; margin: 0; }
+.company-activity .ca-table th { font-size: 12px; color: #596579; padding: 14px 12px; background: #f8f9fc; }
+.company-activity .ca-table td { padding: 17px 12px; vertical-align: top; border-color: #edf0f5; max-width: 340px; overflow-wrap: anywhere; }
+.company-activity .ca-table time { white-space: nowrap; font-size: 13px; }
+.company-activity .ca-title { display: block; font-weight: 600; }
+.company-activity .ca-detail { display: block; white-space: pre-wrap; color: #596579; font-size: 13px; margin-top: 5px; }
+.company-activity .ca-type { display: inline-block; margin-top: 7px; padding: 3px 8px; border-radius: 5px; background: #f0f3f9; color: #475569; font-size: 11px; }
+.company-activity .ca-pagination { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 20px; color: #596579; font-size: 13px; }
+body.dark-only .company-activity .ca-heading p,
+body.dark-only .company-activity .ca-coverage,
+body.dark-only .company-activity .ca-detail,
+body.dark-only .company-activity .ca-pagination,
+body.dark-only .company-activity .ca-state { color: #c0c7d6; }
+body.dark-only .company-activity .ca-table th,
+body.dark-only .company-activity .ca-type,
+body.dark-only .company-activity .ca-account { background: #303b52; color: #e1e7f5; }
+@media (max-width: 575px) {
+    .company-activity .ca-heading { flex-wrap: wrap; }
+    .company-activity .card-header, .company-activity .card-body { padding: 20px 16px; }
+    .company-activity .ca-filters > div { flex-basis: calc(50% - 14px); min-width: 0; }
+    .company-activity .ca-filters > div:first-child { flex-basis: 100%; }
+}
